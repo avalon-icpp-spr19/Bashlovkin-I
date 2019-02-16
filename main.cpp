@@ -9,38 +9,38 @@ const int WEEKDAYS(7);
 int main()
 {
 	setlocale(0, "");
-	// 1 задание
+	// 1 Г§Г Г¤Г Г­ГЁГҐ
 	int a;
 	unsigned b;
-	short int c;
+	short int c1;
 	char d;
 	float e;
 
-	// 2 задание
+	// 2 Г§Г Г¤Г Г­ГЁГҐ
 	int a(0);
-	unsigned b(1);
-	short int c(long long int);
+	unsigned b(0xFFFFFFFFU);
+	size_t c = sizeof(long long int);
 	char d(numeric_limits<char>::max());
 
-	// 3 задание
+	// 3 Г§Г Г¤Г Г­ГЁГҐ
 
 	int a(10);
 	const short int b(0xA);
-	const long long int c(077);
+	const long long int c(077LL);
 	char d(0b0110);
 	char e('f');
-	unsigned int f(23);
-	const long long int(12345);
+	unsigned int f(23U);
+	const long long int(12345LL);
 
 
-	// 4 задание
+	// 4 Г§Г Г¤Г Г­ГЁГҐ
 	short int MyAge;
-	unsigned int AreaOfBackyard;
+	float AreaOfBackyard;
 	long double NumberOfStars;
 	float Rainfall;
 
-	// 5 задание
+	// 5 Г§Г Г¤Г Г­ГЁГҐ
 	float pi(PI);
 	int WeeksInYear(YEARDAYS / WEEKDAYS);
-	cin.get(); // команда для того, чтобы консоль не закрывалась автоматически
+	cin.get(); // ГЄГ®Г¬Г Г­Г¤Г  Г¤Г«Гї ГІГ®ГЈГ®, Г·ГІГ®ГЎГ» ГЄГ®Г­Г±Г®Г«Гј Г­ГҐ Г§Г ГЄГ°Г»ГўГ Г«Г Г±Гј Г ГўГІГ®Г¬Г ГІГЁГ·ГҐГ±ГЄГЁ
 }
