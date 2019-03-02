@@ -6,7 +6,7 @@ int main()
 {
 	setlocale(0, "");
 	{
-		/*Çàäàíèå 1*/
+		/*Ã‡Ã Ã¤Ã Ã­Ã¨Ã¥ 1*/
 		int a, b, c, x;
 		cin >> a;
 		cin >> b;
@@ -23,16 +23,16 @@ int main()
 		bool tri = (c < a + b) || (a == b == c);
 		if (tri)
 		{
-			cout << "Äà";
+			cout << "Ã„Ã ";
 		}
 		else
 		{
-			cout << "Íåò";
+			cout << "ÃÃ¥Ã²";
 		}
 		cout << endl << endl;
 	}
 	{
-		/*Çàäàíèå 2*/
+		/*Ã‡Ã Ã¤Ã Ã­Ã¨Ã¥ 2*/
 		int n, prov;
 		cin >> n;
 		if ((n % 10 == 1) && (n % 100 != 11))
@@ -49,17 +49,17 @@ int main()
 		}
 		switch (prov)
 		{
-		case 1: cout << n << " Ðóáëü";
+		case 1: cout << n << " ÃÃ³Ã¡Ã«Ã¼";
 			break;
-		case 2: cout << n << " ðóáëÿ";
+		case 2: cout << n << " Ã°Ã³Ã¡Ã«Ã¿";
 			break;
-		case 3: cout << n << " ðóáëåé";
+		case 3: cout << n << " Ã°Ã³Ã¡Ã«Ã¥Ã©";
 			break;
 		}
 		cout << endl << endl;
 	}
 	{
-		/*Çàäàíèå 3*/
+		/*Ã‡Ã Ã¤Ã Ã­Ã¨Ã¥ 3*/
 		bool enemyInFront, isBoss;
 		int robotHealth;
 		bool shouldFire = true;
@@ -91,7 +91,7 @@ int main()
 		cout << endl << endl;
 	}
 	{
-		/*Çàäàíèå 4*/
+		/*Ã‡Ã Ã¤Ã Ã­Ã¨Ã¥ 4*/
 		int foto1, foto2, foto3, points;
 		cin >> foto1; cin >> foto2; cin >> foto3;
 		if (foto1 > foto2)
@@ -114,7 +114,7 @@ int main()
 		cout << endl << endl;
 	}
 	{
-		/*Çàäàíèå 5*/
+		/*Ã‡Ã Ã¤Ã Ã­Ã¨Ã¥ 5*/
 		int d, m, y;
 		cin >> d; cin >> m; cin >> y;
 		if (m < 13 && m > 0)
@@ -181,7 +181,7 @@ int main()
 		cout << endl << endl;
 	}
 	{
-		/*Çàäàíèå 6*/
+		/*Ã‡Ã Ã¤Ã Ã­Ã¨Ã¥ 6*/
 		int kletka1, kletka2;
 		cin >> kletka1; cin >> kletka2;
 		int xod1, xod2, xod3, xod4;
