@@ -20,7 +20,7 @@ int main()
 			x = b; b = c; c = x;
 		}
 
-		bool tri = (c < a + b) || (a == b == c);
+		bool tri = (c < a + b) || (a == b && b == c);
 		if (tri)
 		{
 			cout << "Äà";
@@ -69,13 +69,13 @@ int main()
 		cin >> isBoss;
 		cout << "robotHealth: ";
 		cin >> robotHealth;
-		if (enemyInFront != true)
+		if (!enemyInFront)
 		{
 			shouldFire = false;
 		}
 		else
 		{
-			if (isBoss == true)
+			if (!isBoss)
 			{
 				if (robotHealth < 50)
 				{
@@ -148,7 +148,21 @@ int main()
 			else
 			{
 				int proverka;
+				if(m >= 7)
+				{
 				proverka = m % 2;
+				}
+				else
+				{
+					if(m % 2 = 0)
+					{
+						proverka = 1;
+					}
+					else
+					{
+						proverka = 0;
+					}
+				}
 				switch (proverka)
 				{
 				case 0:
