@@ -72,20 +72,43 @@ int main()
 #.#.#
 		.#.#.
 #.#.#*/
-	int n;
-	cin >> n;
-	for (int i(1); i < (n*n) + 1; i++)
-	{
-		if (i % 2 == 0)
+	int n, str(0);
+		cin >> n;
+		for (int i(0); i < n; i++)
 		{
-			cout << ".";
+			str++;
+			if (str % 2 == 1)
+			{
+				for (int j(0); j < n; j++)
+				{
+					if (j % 2 == 1)
+					{
+						cout << ".";
+					}
+					else
+					{
+						cout << "#";
+					}
+				}
+				cout << endl;
+			}
+			else
+			{
+				for (int j(0); j < n; j++)
+				{
+					if (j % 2 == 1)
+					{
+						cout << "#";
+					}
+					else
+					{
+						cout << ".";
+					}
+				}
+				cout << endl;
+			}
 		}
-		else
-		{
-			cout << "#";
-		}
-		if (i % n == 0) cout << endl;
-	}
+		cout << endl;
 		/*Задание 4
 		Напишите программу, которая принимает у пользователя натуральное число N
 		и выводит в консоль ромб со стороной N.
