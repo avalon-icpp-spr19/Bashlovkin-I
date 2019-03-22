@@ -15,7 +15,7 @@ int main()
 		10							54
 		20							36
 		*/
-	int res, N;
+	int res(0), N;
 	cin >> N;
 	for (int i(100); i < 1000; i++)
 	{
@@ -104,7 +104,7 @@ int main()
 #####
 ###
 #*/
-int N, n;
+int N, n(0);
 	cin >> N;
 	for (int i(0); i < 2 * n - 1; i++)
 	{
