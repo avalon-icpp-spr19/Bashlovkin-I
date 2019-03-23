@@ -35,7 +35,7 @@ int main()
 	}
 	cout << a << endl << endl;
 
-	int n, b;
+	int n, b(0);
 	cin >> n;
 	while (true)
 	{
