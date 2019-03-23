@@ -116,83 +116,76 @@ int main()
 	{
 		/*Çàäàíèå 5*/
 		int d, m, y;
-		cin >> d; cin >> m; cin >> y;
-		if (m < 13 && m > 0)
+	cin >> y; cin >> m; cin >> d;
+	if (m < 13 && m > 0)
+	{
+		if (m == 2)
 		{
-			if (m == 2)
+			bool IsLeapYear = (y % 400 == 0) || (y % 100 != 0) && (y % 4 == 0);
+			if (IsLeapYear)
 			{
-				bool IsLeapYear = (y % 400 == 0) || (y % 100 != 0) && (y % 4 == 0);
-				if (IsLeapYear)
+				if (d > 29)
 				{
-					if (d > 29)
-					{
-						cout << "false";
-					}
-					else
-					{
-						cout << "true";
-					}
+					cout << "false";
 				}
 				else
 				{
-					if (d > 28)
-					{
-						cout << "false";
-					}
-					else
-					{
-						cout << "true";
-					}
+					cout << "true";
 				}
 			}
 			else
 			{
-				int proverka;
-				if(m >= 7)
+				if (d > 28)
 				{
-				proverka = m % 2;
+					cout << "false";
 				}
 				else
 				{
-					if(m % 2 = 0)
-					{
-						proverka = 1;
-					}
-					else
-					{
-						proverka = 0;
-					}
-				}
-				switch (proverka)
-				{
-				case 0:
-					if (d > 30)
-					{
-						cout << "false";
-					}
-					else
-					{
-						cout << "true";
-					}
-					break;
-				case 1:
-					if (d > 31)
-					{
-						cout << "false";
-					}
-					else
-					{
-						cout << "true";
-					}
-					break;
+					cout << "true";
 				}
 			}
 		}
 		else
 		{
-			cout << "false";
+			switch (m)
+			{
+			case 1:
+			case 3:
+			case 5:
+			case 7:
+			case 8:
+			case 10:
+			case 12:
+				if (d > 31)
+				{
+					cout << "false";
+				}
+				else
+				{
+					cout << "true";
+				}
+				break;
+			case 4:
+			case 6:
+			case 9:
+			case 11:
+				if (d > 30)
+				{
+					cout << "false";
+				}
+				else
+				{
+					cout << "true";
+				}
+				break;
+			}
 		}
-		cout << endl << endl;
+	}
+	else
+	{
+		cout << "false";
+	}
+	cout << endl << endl;
 	}
 	{
 		/*Çàäàíèå 6*/
