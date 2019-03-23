@@ -21,8 +21,8 @@ int main()
 	{
 		int a, b, c, sum;
 		a = i % 10;
-		b = i % 100 - a;
-		c = i - b * 10 - a;
+		b = ((i - a) / 10) % 100;
+		c = (((i - a) / 10) - b) / 10;
 		sum = a + b +c ;
 		if (sum == N) res++;
 	}
@@ -127,31 +127,36 @@ int main()
 #####
 ###
 #*/
-int N, n(0);
-	cin >> N;
-	for (int i(0); i < 2 * n - 1; i++)
+	int n, score(0), sc1(1), sc2(1), sc3(1);
+	cin >> n;
+	for (int i(0); i < (n * 2); i++)
 	{
-	for (int q(0); q < ((i - (i + (i - 1))) / 2); q++)
-	{
-		cout << " ";
-	}
-	if (i <= n)
-	{
-		for (int k(0); k < (i + (i - 1)); k++)
+		for (int p(0); p < ((n + (n - 1) - sc2 + 2) / 2); p++)
 		{
-			cout << "#";
+			cout << " ";
 		}
-	}
-	else
-	{
-		for (int k(0); k < (i - (i - 1)); k++)
+		sc2 += 2;
+		if (i <= n)
 		{
-			cout << "#";
+			for (int r(0); r < (i + (i - 1)); r++)
+			{
+				cout << "#";
+				score = (i + (i - 1));
+			}
 		}
-	}
-	for (int p(0); p < ((i - (i + (i - 1))) / 2); p++)
-	{
-		cout << " ";
+		else
+		{
+			for (int p(0); p < (i - n); p++)
+			{
+				cout << " ";
+			}
+			for (int r(0); r < (score - sc1 * 2); r++)
+			{
+				cout << "#";
+			}
+			sc1++;
+		}
+		cout << endl;
 	}
 	cin.get(); cin.get();
 }
